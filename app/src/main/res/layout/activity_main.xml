@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="52dp"
+        android:layout_height="55dp"
+        android:drawableTop="@drawable/ic_android_black_24dp"
+        android:text="Rovers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="94dp"
+        android:layout_height="53dp"
+        android:drawableTop="@drawable/ic_baseline_satellite_24"
+        android:text="space stations"
+        app:layout_constraintEnd_toStartOf="@id/textView2"
+        app:layout_constraintHorizontal_bias="0.362"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="52dp"
+        android:layout_height="57dp"
+        android:drawableTop="@drawable/ic_baseline_flight_24"
+        android:text="flights"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/textView1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/viewOne"
+        android:layout_width="112dp"
+        android:layout_height="108dp"
+        android:text="DCA"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:background="#3DDC84"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@id/viewTwo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        app:layout_constraintVertical_bias="0.496"
+         />
+
+    <TextView
+        android:id="@+id/viewTwo"
+        android:layout_width="112dp"
+        android:layout_height="108dp"
+        android:text="MARS"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:background="#3DDC84"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/viewOne"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.495" />
+
+    <TextView
+        android:id="@+id/viewThree"
+        android:layout_width="68dp"
+        android:layout_height="65dp"
+        android:background="#3dd"
+        android:drawableTop="@drawable/ic_baseline_arrow_back_24"
+        android:drawableBottom="@drawable/ic_baseline_arrow_forward_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/viewOne"
+        app:layout_constraintTop_toBottomOf="@id/textView2" />
+
+    <TextView
+        android:id="@+id/viewfour"
+        android:layout_width="123dp"
+        android:layout_height="74dp"
+        android:layout_marginEnd="244dp"
+        android:background="#FF5722"
+        android:text="ONE WAY"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:drawableEnd="@drawable/ic_baseline_toggle_off_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/viewOne"
+        app:layout_constraintVertical_bias="0.34" />
+
+    <TextView
+        android:id="@+id/viewfive"
+        android:layout_width="123dp"
+        android:layout_height="74dp"
+        android:layout_marginEnd="244dp"
+        android:background="#FF5722"
+        android:text="1 traveller"
+        android:gravity="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewfour"
+        app:layout_constraintVertical_bias="0.34" />
+</androidx.constraintlayout.widget.ConstraintLayout>
